@@ -1,0 +1,101 @@
+﻿body
+{
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url('background.jpg');
+    background-position: top center;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    text-align: center; 
+    font-size: 30px;     
+    color:transparent;
+    position: absolute;
+    top: 10px; 
+    width: 100vw ;
+    z-index: 1;
+    animation: animate 2.5s linear infinite;
+}
+#TextCounter{
+    width:580px;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #87F;
+}
+#TextCounter span
+{
+    background: linear-gradient(135deg, #b3851a,#8a2e2e,#ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    color:transparent;
+    width: 100%;
+    z-index: -1;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: 30px 'ChunkFiveRegular';
+    text-shadow: 0 0  1em #87F, 0 0 1em #87F, 0 0 1em #87F,0 0 1em #87F;
+    animation: animate 2.5s linear infinite;
+}   
+@keyframes animate{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+
+#copyright
+{
+    
+    padding-top:195px;
+    color: #d61010;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left:500px;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+
+#BgContent
+{
+    height: 621px;
+    width: 908px;
+    position:relative;
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('bgcontent.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+#MusicPlayer
+{
+    margin-top:15px;
+    padding-left:450px;
+   
+}
+
+
+#TextContent
+{
+    color:red;
+    height:270px;
+    width:570px;
+    margin-top:25px;
+    line-height:20px;
+    z-index:1;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+#counter{
+    color:red;
+}
+
